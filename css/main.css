@@ -1,0 +1,155 @@
+/*** BOX-SIZING ***/
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  color: #EEEEEE;
+}
+
+/*** LINKS ***/
+html * a, html * a:visited, html * au:active {
+  color: #DDAADD;
+  font-size: 1.125em;
+  text-decoration: none;
+  text-shadow: 2px 2px 0 #000066;
+}
+html * a:hover {
+  color: #CCCC00;
+  text-decoration: none;
+}
+
+/*** MAIN ***/
+main {
+  margin: 0 auto;
+  min-height: 100vh;
+  background: #242;
+}
+
+header h1 {
+  font-size: 3.5em;
+  font-weight: bold;
+  text-shadow: 10px 10px 10px #222;
+}
+
+header p {
+  font-size: 1.5em;
+}
+
+figure {
+  padding: 0 auto;
+}
+
+figure img {
+  margin-bottom: 20px;
+  box-shadow: 10px 10px 10px #222;
+}
+
+hr {
+  margin: 20px;
+  border-width: 3px;
+  border-color: black;
+  box-shadow: 10px 10px 10px #222;
+  opacity: .2;
+}
+
+
+/*** BIBLIOGRAPHY ***/
+header h2 {
+  font-weight: bold;
+  text-shadow: 10px 10px 10px #222;
+}
+
+#bibliography {
+  max-width: 1180px;
+  list-style-type: none;
+  /*margin-top: 30px;*/
+  margin: 30px auto 20px;
+}
+
+#bibliography th {
+  font-size: 1.375em;
+}
+
+#bibliography td {
+  font-size: 1.125em;
+}
+
+.book-year {
+  width: 120px;
+  text-align: right;
+}
+
+#bibliography tr {
+  align-items: center;
+}
+
+#bibliography tr:hover td {
+  color: black;
+}
+
+#bibliography tr:hover td a {
+  color: #000066;
+  font-weight: bold;
+  text-shadow: 10px 10px 10px #006600;
+}
+
+/*** FOOTER ***/
+footer p {
+  margin: 20px 30px;
+  font-style: italic;
+}
+
+
+
+/*** SMALL MOBILE DEVICES ***/
+@media all and (max-width: 600px) {
+  #main-header * {
+    margin-bottom: .625em;
+    line-height: .375em;
+    font-size: 2.5em;
+  }
+  #birth-death {
+    font-size: .5em;
+  }
+  .sm-hide {
+    display: hidden;
+  }
+    
+  hr {
+    border-width: 1px;
+    box-shadow: 3px 3px 3px #222;
+    opactiy: 1;
+  }
+  
+  /*** Bibliography ***/
+  #book-section {
+    padding: 0 4px;
+  }
+
+  #bibliography {
+    font-size: .875em;
+  }
+  
+  .book-year {
+    width: 30px;
+  }
+  
+  #hr-before-footer {
+    margin: 10px 0;
+  }
+  
+  /*** footer ***/
+  footer a {
+    font-size: .875em;
+  }
+}
+
+
+
+@media all and (min-width: 601px) {
+  #book-section {
+    padding: 0 10px;
+  }
+}
